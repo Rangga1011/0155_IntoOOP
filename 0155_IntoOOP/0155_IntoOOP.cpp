@@ -1,51 +1,50 @@
 #include <iostream>
 using namespace std;
 
-class mahasiswa {
-public: // akses modifier
+class Mahasiswa{
+
+public:
 	string nama;
-	string umur;
+	int umur;
 	string jurusan;
 
 	void output() {
-		cout << "Nama: " << nama << endl;
-		cout << "Umur: " << umur << endl;
-		cout << "Jurusan: " << jurusan << endl;
+		cout << "nama: " << nama << endl;
+		cout << "umur: " << umur << endl;
+		cout << "jurusan: " << jurusan << endl;
 	}
-
 };
-
 
 class Matakuliah {
 private:
-	string kodeMk;
-	string namaMk;
-	string sks;
+	string kodeMK;
+	string namaMK;
+	int sks;
 public:
 	void input() {
-		cout << "kode Mk: ";
-		cout << kodeMk;
-		cout << "Nama Mk: ";
-		cout << namaMk;
+		cout << "Kode MK: ";
+		cin >> kodeMK;
+		cout << "nama MK: ";
+		cin >> namaMK;
 		cout << "SKS: ";
-		cout << sks;
-	}
-	
-	void output() {
-		cout << "Kode Mk: " << kodeMk << endl;
-		cout << "Nama Mk: " << namaMk << endl;
-		cout << "SKS: " << sks << endl;
+		cin >> sks;
+
 	}
 
+	void output() {
+		cout << "Kode MK: " << kodeMK << endl;
+		cout << "Nama MK: " << namaMK << endl;
+		cout << "SKS: " << sks << endl;
+	}
 };
 
 int main() {
-	mahasiswa mhs;
+	Mahasiswa mhs;
 	Matakuliah mk;
 
 	mhs.nama = "Budi";
 	mhs.umur = 20;
-	mhs.jurusan = "Teknik Informatika";
+	mhs.jurusan = "Teknik informatika ";
 	mhs.output();
 
 	mk.input();
