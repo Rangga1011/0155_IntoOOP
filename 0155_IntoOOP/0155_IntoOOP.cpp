@@ -12,6 +12,13 @@ public: // akses modifier
 		cout << "Umur: " << umur << endl;
 		cout << "Jurusan: " << jurusan << endl;
 	}
+
+};
+
+
+class Matakuliah {
+private:
+	string kodeMk;
 };
 
 
