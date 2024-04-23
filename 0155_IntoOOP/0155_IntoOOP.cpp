@@ -27,6 +27,8 @@ public:
 		cout << kodeMk;
 		cout << "Nama Mk: ";
 		cout << namaMk;
+		cout << "SKS: ";
+		cout << sks;
 	}
 
 };
