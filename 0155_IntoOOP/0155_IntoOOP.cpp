@@ -6,6 +6,10 @@ public: // akses modifier
 	string nama;
 	string umur;
 	string jurusan;
+
+	void output() {
+		cout << "Nama: " << nama << endl;
+	}
 };
 
 
