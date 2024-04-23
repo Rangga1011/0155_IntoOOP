@@ -5,6 +5,7 @@ class mahasiswa {
 public: // akses modifier
 	string nama;
 	string umur;
+	string jurusan;
 };
 
 
